@@ -19,7 +19,7 @@ public class MaxNumberTest {
     }
 
     @Test
-    public void intgerMaxNumber_AtThird_Position() {
+    public void integerMaxNumber_AtThird_Position() {
         MaxNumber<Integer> max = new MaxNumber<>(4, 7, 10);
         Assert.assertEquals(10, max.findMaxNumber().intValue());
     }
@@ -27,6 +27,12 @@ public class MaxNumberTest {
     @Test
     public void floatMaxNumber_AtFirst_Position() {
         MaxNumber<Float> max = new MaxNumber<>(1.3f, 1.2f, 1.1f);
+        Assert.assertEquals(1.3f, max.findMaxNumber(), 0.0f);
+    }
+
+    @Test
+    public void floatMaxNumber_AtSecond_Position() {
+        MaxNumber<Float> max = new MaxNumber<>(1.1f, 1.3f, 1.2f);
         Assert.assertEquals(1.3f, max.findMaxNumber(), 0.0f);
     }
 

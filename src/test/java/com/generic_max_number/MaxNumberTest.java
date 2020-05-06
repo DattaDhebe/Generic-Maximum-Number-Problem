@@ -48,4 +48,9 @@ public class MaxNumberTest {
         Assert.assertEquals("Peach", max.findMaxNumber());
     }
 
+    @Test
+    public void stringMaxNumber_AtSecond_Position() {
+        MaxNumber<String> max = new MaxNumber<>("Apple", "Peach", "Banana");
+        Assert.assertEquals("Peach", max.findMaxNumber());
+    }
 }

@@ -36,4 +36,10 @@ public class MaxNumberTest {
         Assert.assertEquals(1.3f, max.findMaxNumber(), 0.0f);
     }
 
+    @Test
+    public void floatMaxNumber_AtThird_Position() {
+        MaxNumber<Float> max = new MaxNumber<>(1.1f, 1.2f, 1.3f);
+        Assert.assertEquals(1.3f, max.findMaxNumber(), 0.0f);
+    }
+
 }

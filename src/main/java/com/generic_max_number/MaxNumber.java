@@ -11,11 +11,11 @@ public class MaxNumber<T extends  Comparable> {
         return findMaxNumber(this.numbers);
     }
 
-    private static <T extends  Comparable> T findMaxNumber(T... values) {
-        T maxNumber = values[0];
-        for (int i = 1; i < values.length; i++) {
-            if ( maxNumber.compareTo(values[i]) < 0 )
-                maxNumber = values[i];
+    private static <T extends  Comparable> T findMaxNumber(T... numbers) {
+        T maxNumber = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if ( maxNumber.compareTo(numbers[i]) < 0 )
+                maxNumber = numbers[i];
         }
         return maxNumber;
     }

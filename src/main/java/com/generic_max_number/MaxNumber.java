@@ -17,7 +17,13 @@ public class MaxNumber<T extends  Comparable> {
             if ( maxNumber.compareTo(numbers[i]) < 0 )
                 maxNumber = numbers[i];
         }
+
+        toPrintValues(maxNumber);
         return maxNumber;
+    }
+
+    private static <T extends Comparable> void toPrintValues(T maxNumber) {
+        System.out.println("Maximum values : "+maxNumber);
     }
 
 }

@@ -43,14 +43,21 @@ public class MaxNumberTest {
     }
 
     @Test
-    public void stringMaxNumber_AtFirst_Position() {
+    public void stringMaxString_AtFirst_Position() {
         MaxNumber<String> max = new MaxNumber<>( "Peach", "Apple", "Banana");
         Assert.assertEquals("Peach", max.findMaxNumber());
     }
 
     @Test
-    public void stringMaxNumber_AtSecond_Position() {
+    public void stringMaxString_AtSecond_Position() {
         MaxNumber<String> max = new MaxNumber<>("Apple", "Peach", "Banana");
         Assert.assertEquals("Peach", max.findMaxNumber());
     }
+
+    @Test
+    public void stringMaxString_AtThird_Position() {
+        MaxNumber<String> max = new MaxNumber<>("Apple", "Banana", "Peach");
+        Assert.assertEquals("Peach", max.findMaxNumber());
+    }
+
 }

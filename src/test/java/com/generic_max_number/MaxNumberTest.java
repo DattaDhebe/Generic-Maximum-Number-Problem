@@ -8,7 +8,7 @@ public class MaxNumberTest {
 
     @Test
     public void integerMaxNumber_AtFirst_Position() {
-        MaxNumber<Integer> max = new MaxNumber<>(10, 4, 7);
+        MaxNumber<Integer> max = new MaxNumber<>(10, 4, 7, 2, 3);
         Assert.assertEquals(10, max.findMaxNumber().intValue());
     }
 
@@ -26,8 +26,8 @@ public class MaxNumberTest {
 
     @Test
     public void floatMaxNumber_AtFirst_Position() {
-        MaxNumber<Float> max = new MaxNumber<>(1.3f, 1.2f, 1.1f);
-        Assert.assertEquals(1.3f, max.findMaxNumber(), 0.0f);
+        MaxNumber<Float> max = new MaxNumber<>(2.3f, 1.2f, 1.1f, 1.3f, 2.1f);
+        Assert.assertEquals(2.3f, max.findMaxNumber(), 0.0f);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class MaxNumberTest {
 
     @Test
     public void stringMaxString_AtFirst_Position() {
-        MaxNumber<String> max = new MaxNumber<>( "Peach", "Apple", "Banana");
+        MaxNumber<String> max = new MaxNumber<>( "Peach", "Apple", "Banana", "Fruit", "Hack");
         Assert.assertEquals("Peach", max.findMaxNumber());
     }
 
